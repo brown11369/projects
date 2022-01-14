@@ -15,4 +15,40 @@
         font-size: 0px;
         text-align: center;
     }
+
+    .feb:hover ~ .slider{
+        margin-left: -300px;
+    }
+    .mar:hover ~ .slider{
+        margin-left: -600px;
+    }
+    .apr:hover ~ .slider{
+        margin-left: -900px;
+    }
+    .may:hover ~ .slider{
+        margin-left: -1200px;
+    }
+    .june:hover ~ .slider{
+        margin-left: -1500px;
+    }
+    .july:hover ~ .slider{
+        margin-left: -1800px;
+    }
+    .aug:hover ~ .slider{
+        margin-left: -2100px;
+    }
+    .sep:hover ~ .slider{
+        margin-left: -2400px;
+    }
+    .oct:hover ~ .slider{
+        margin-left: -2700px;
+    }
+    .nov:hover ~ .slider{
+        margin-left: -3000px;
+    }
+    .dec:hover ~ .slider{
+        margin-left: -3300px;
+    }
+
+
 }
