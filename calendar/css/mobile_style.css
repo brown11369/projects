@@ -3,7 +3,7 @@
         background-position: 0px 0px;
     }
     .box{
-        width: 292px;
+        width: 300px;
         height: 550px;
         background-color: rgba(255, 255, 255, 0.2);
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -17,37 +17,37 @@
     }
 
     .feb:hover ~ .slider{
-        margin-left: -300px;
+        margin-left: -302px;
     }
     .mar:hover ~ .slider{
-        margin-left: -600px;
+        margin-left: -604px;
     }
     .apr:hover ~ .slider{
-        margin-left: -900px;
+        margin-left: -906px;
     }
     .may:hover ~ .slider{
-        margin-left: -1200px;
+        margin-left: -1208px;
     }
     .june:hover ~ .slider{
-        margin-left: -1500px;
+        margin-left: -1510px;
     }
     .july:hover ~ .slider{
-        margin-left: -1800px;
+        margin-left: -1812px;
     }
     .aug:hover ~ .slider{
-        margin-left: -2100px;
+        margin-left: -2114px;
     }
     .sep:hover ~ .slider{
-        margin-left: -2400px;
+        margin-left: -2416px;
     }
     .oct:hover ~ .slider{
-        margin-left: -2700px;
+        margin-left: -2718px;
     }
     .nov:hover ~ .slider{
-        margin-left: -3000px;
+        margin-left: -3020px;
     }
     .dec:hover ~ .slider{
-        margin-left: -3300px;
+        margin-left: -3322px;
     }
 
 
