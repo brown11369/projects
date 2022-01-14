@@ -93,8 +93,8 @@
     .birds{
         width: 50%;
         position: absolute;
-        top: 30px;
-        right: -165px;
+        top: 0px;
+        right: 0px;
         animation-name: fly;
         animation-duration: 45s;
         animation-fill-mode: none;
