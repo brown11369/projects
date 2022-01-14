@@ -50,5 +50,45 @@
         margin-left: -3322px;
     }
 
+    .feb{
+        left: 60px;
+    }
+    .mar{
+        left: 120px;
+    }
+    .apr{
+        left: 180px;
+    }
+    .may{
+        left: 240px;
+    }
+    .june{
+        left: 300px;
+    }
+    .july{
+        left: 0px;
+        top: 30px;
+    }
+    .aug{
+        left: 60px;
+        top: 30px;
+    }
+    .sep{
+        left: 120px;
+        top: 30px;
+    }
+    .oct{
+        left: 180px;
+        top: 30px;
+    }
+    .nov{
+        left: 240px;
+        top: 30px;
+    }
+    .dec{
+        left: 300px;
+        top: 30px;
+    }
+
 
 }

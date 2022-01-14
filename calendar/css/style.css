@@ -19,44 +19,45 @@ section{
     background-position: 0px -140px;
 }
 .month{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 30px;
+    line-height: 20px;
     position: absolute;
     top: 0;
     left: 0;
 }
 .feb{
-    left: 40px;
+    left: 60px;
 }
 .mar{
-    left: 80px;
-}
-.apr{
     left: 120px;
 }
+.apr{
+    left: 180px;
+}
 .may{
-    left: 160px;
-}
-.june{
-    left: 200px;
-}
-.july{
     left: 240px;
 }
-.aug{
-    left: 280px;
+.june{
+    left: 300px;
 }
-.sep{
-    left: 320px;
-}
-.oct{
+.july{
     left: 360px;
 }
+.aug{
+    left: 420px;
+}
+.sep{
+    left: 480px;
+}
+.oct{
+    left: 540px;
+}
 .nov{
-    left: 400px;
+    left: 600px;
 }
 .dec{
-    left: 440px;
+    left: 660px;
 }
 .feb:hover ~ .slider{
     margin-left: -302px;
