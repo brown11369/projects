@@ -72,10 +72,14 @@ section{
 }
 .l1{
     margin-top: 170px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 .l2{
-    margin-top: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.l3{
+    margin-top: 3px;
 }
 .btn{
     display: inline-block;
@@ -128,10 +132,19 @@ h3{
 .years{
     width: 300px;
     display: flex;
-    justify-content: space-evenly;
-    line-height: 35px;
+    justify-content: space-around;
+    line-height: 30px;
     text-align: center;
     font-size: 1.4rem;
     color: #fff;
     transition: .9s;
+}
+.pre,.for{
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: white;
 }
