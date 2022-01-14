@@ -96,7 +96,16 @@ section{
     width: 10%;
     position: absolute;
     top: 0;
-    right: 0;
+    right: -130px;
+    animation-name: fly;
+    animation-duration: 45s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+@keyframes fly{
+    from{transform: translateX(0);}
+    to{transform: translateX(-1500px);}
 }
 .months{
     width: 300px;
