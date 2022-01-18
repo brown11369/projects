@@ -2,8 +2,17 @@
     section{
         background-position: 0px 0px;
     }
-    .calendar{
-        width: 80%;
-        height: 500px;
+    .birds{
+        width: 50%;
+        position: absolute;
+        animation-name: fly;
+        animation-duration: 10s;
+        animation-fill-mode: none;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+    @keyframes fly{
+        from{transform: translateX(0);}
+        to{transform: translateX(-200px);}
     }
 }
