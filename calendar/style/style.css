@@ -1,0 +1,145 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/wallpaper1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -140px;
+}
+.calendar{
+    width: 20%;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+}
+.festival{
+    width: 90%;
+    height: 180px;
+    overflow: hidden;
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.slide{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+.slide:nth-child(1){
+    background-color: aqua;
+}
+.slide:nth-child(2){
+    background-color: red;
+}
+.slide:nth-child(3){
+    background-color: blue;
+}
+.slide:nth-child(4){
+    background-color: orangered;
+}
+.slide:nth-child(5){
+    background-color: purple;
+}
+.slide:nth-child(6){
+    background-color: brown;
+}
+
+
+/* ///////////////////////////////////////////// */
+.months{
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.box{
+    width: 100%;
+    height: 250px;
+    font-size: 1.8rem;
+    margin-top: -10px;
+    /* background-color: blue; */
+}
+.note{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* background-color: chartreuse; */
+}
+.years{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+.pre,.next{
+    width: 10%;
+}
+.pre a{
+    text-decoration: none;
+    color: #fff;
+}
+.next a{
+    text-decoration: none;
+    color: #fff;
+}
+.year{
+    width: 40%;
+    color: #fff;
+}
+
+
+th{
+    text-align: center;
+    font-size: 1.5rem;
+    transition: .9s;
+    padding: .5rem;
+}
+td{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: .5rem;
+    transition: .9s;
+}
+td:hover{
+    background-color: white;
+    color: black;
+}
+
+.birds{
+    width: 10%;
+    position: absolute;
+    animation-name: fly;
+    animation-duration: 45s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+@keyframes fly{
+    from{transform: translateX(0);}
+    to{transform: translateX(-1500px);}
+}
