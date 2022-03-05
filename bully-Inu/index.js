@@ -13,5 +13,10 @@ function copyToClipboard(execCopy){
     document.body.removeChild(selBox);
     alert('you have copied the Contract Address of Bully Inu')
 
-  }  
+  }
 
+  function showHide(){
+    document.querySelectorAll('.menu')[0].classList.toggle('close');
+    document.querySelectorAll('.menu')[1].classList.toggle('close');
+    document.querySelector('nav').classList.toggle('display');
+}
