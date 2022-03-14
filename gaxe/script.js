@@ -2583,30 +2583,43 @@ let movies = [
   },
 ];
 
+function displayData() {
+  movies.forEach(function (movie, index) {
+    let row = document.createElement("tr");
+
+    let titletd = document.createElement("td");
+    titletd.append(movie.title);
+
+    let releaseDatetd = document.createElement("td");
+    releaseDatetd.append(movie.releaseDate);
+
+    let yeartd = document.createElement("td");
+    yeartd.append(movie.year);
+
+    let genertd = document.createElement("td");
+    movie.genres.forEach(function (genre, index) {
+      genertd.append(genre + ",");
+    });
+
+    let durationtd = document.createElement("td");
+    durationtd.append(movie.duration);
+
+    let imdbRatingtd = document.createElement("td");
+    imdbRatingtd.append(movie.imdbRating);
 
 
-function displayData(){
-    movies.forEach(function(movie,index){
-        let row=document.createElement("tr");
-
-        let titletd=document.createElement("td");
-        titletd.append(movie.title);
-
-        let yeartd=document.createElement("td");
-        yeartd.append(movie.year);
-
-        let genertd=document.createElement("td");
-        genertd.append(movie.genres);
 
 
 
-        row.appendChild(titletd);
-        row.appendChild(yeartd);
-        row.appendChild(genertd);
+    row.appendChild(titletd);
+    row.appendChild(releaseDatetd);
+    row.appendChild(yeartd);
+    row.appendChild(genertd);
+    row.appendChild(durationtd);
+    row.appendChild(imdbRatingtd);
 
-
-        document.getElementById("data").appendChild(row);
-    })
+    document.getElementById("data").appendChild(row);
+  });
 }
 
 displayData();
