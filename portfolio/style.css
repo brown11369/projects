@@ -1,28 +1,65 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     font-family: 'Segoe UI';
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.85%;
 }
 .wrapper{
     display: flex;
-    height: 625px;
 }
 .header{
     width: 10%;
+    height: 100vh;
+    width: 15%;
     background-color: #181818;
 }
+.container{
+    width: 85%;
+    height: 100vh;
+    background-color: #1D1D1D;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.slide{
+    width: 100%;
+    height: 100vh;
+    padding: 20px 30px;
+}
+.slide:nth-child(2){
+    background-color: #000;
+}
+
+.slide:nth-child(5){
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(208, 255, 0);
+}
+.home-slide{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/* //////////////////////////////////////////////////////////////// */
 .logo{
     width: 100%;
     border-bottom: 1px solid #282828;
-    height: 150px;
+    /* height: 150px; */
 }
 .nav{
     text-align: center;
 }
 .nav .fab,.fas{
-    font-size: 19px;
+    font-size: 2.5rem;
     color: white;
-    margin-top: 5px;
+    margin: 10px 5px;
 }
 .profile{
     width: 90%;
@@ -39,16 +76,11 @@
     text-decoration: none;
     text-align: center;
     display: block;
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     color: #909096;
     line-height: 3rem;
     border-bottom: 1px solid #282828;
-}
-.container{
-    background-color: #1D1D1D;
-    width: 90%;
-    padding-left: 2%;
-    padding-top: 5%;
+    padding: 10px 0;
 }
 .detl{
     color: #fff;
@@ -56,12 +88,14 @@
     line-height: 60px;
 }
 .ani{
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
     height: 60px;
     overflow: hidden;
     font-size: 55px;
     color: white;
     line-height: 60px;
+    gap: 10px;
 }
 .anio{
     animation-name: slide;
@@ -96,25 +130,99 @@
 .tech{
     font-size: 45px;
     color: white;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 .list{
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 80px;
+    /* justify-content: space-evenly; */
+    /* margin-top: 80px; */
+    gap: 20px;
 }
 .btn{
     width: 300px;
     height: 50px;
-    color: white;
-    background-color: #909096;
+    color: #000;
+    /* background-color: #909096; */
     border: none;
     border-radius: 10px;
     text-align: center;
     line-height: 50px;
     font-size: 20px;
+    transition: 1.5s;
+}
+.btn:hover{
+    box-shadow: 0 0 25px #1fb8fc;
 }
 .btn a{
     text-decoration: none;
     color: white;
+}
+.about-box{
+    display: flex;
+    margin-top: 20px;
+}
+.about-text{
+    width: 50%;
+}
+.animat{
+    width: 50%;
+}
+.about-img{
+    width: 80%;
+}
+.bar-box{
+    padding: 10px 20px;
+}
+.bar-border{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.bar{
+    height:14px;
+    background-color:#9e9e9e;
+    border-radius: 10px;
+}
+.html-bar{
+    width:90%;
+    color:#000;
+}
+.bar-text{
+    color: #fff;
+    line-height: 20px;
+}
+.css-bar{
+    width:85%;
+    color:#000;
+}
+.js-bar{
+    width:65%;
+    color:#000;
+}
+.strp-bar{
+    width: 87%;
+    color:#000;
+}
+.tail-bar{
+    width: 67%;
+    color:#000;
+}
+.card-box{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.card{
+    width: 30%;
+}
+.proj-img{
+    width: 70%;
+    transition: 1.5s;
+    border-radius: 10px;
+}
+.proj-img:hover{
+    border-radius: 10px;
+    box-shadow: 0 0 25px #1fb8fc;
 }

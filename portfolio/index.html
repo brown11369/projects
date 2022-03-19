@@ -1,62 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portflio</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="logo"><img src="./img/profil-linkedin.jpg" class="profile" alt="profile-picture"></div>
             <nav class="nav">
                 <ul class="navigation">
-                    <li class="nav_link"><a href="#">Home</a></li>
-                    <li class="nav_link"><a href="#">About</a></li>
-                    <li class="nav_link"><a href="#">My Skills</a></li>
-                    <li class="nav_link"><a href="#">Work</a></li>
-                    <li class="nav_link"><a href="#">Contact</a></li>
+                    <li class="nav_link"><a href="#home">Home</a></li>
+                    <li class="nav_link"><a href="#about">About</a></li>
+                    <li class="nav_link"><a href="#sklill">My Skills</a></li>
+                    <li class="nav_link"><a href="#work">Work</a></li>
+                    <li class="nav_link"><a href="#contact">Contact</a></li>
                 </ul>
                 <i class="fab fa-github-square"></i>
                 <i class="fab fa-linkedin"></i>
                 <i class="fas fa-globe"></i>
             </nav>
         </header>
+
         <section class="container">
-            <h1></h1>
-            <h2 class="detl"> Hi,</br>I'm Brown,</br></h2>
-            <div class="ani">
-                <div class="anio">
-                    <div class="ani1">Front-End</div>
-                    <div class="ani2">Back-End</div>
+            <div id="home" class="slide home-slide">
+                <h2 class="detl"> Hi,</br>I'm Brown,</br></h2>
+                <div class="ani">
+                    <div class="anio">
+                        <div class="ani1">Front-End</div>
+                        <div class="ani2">Back-End</div>
+                    </div>
+                    <span class="detl">Developer</span>
+                </div>
+                <p class="about">Front-End Developer with 1.3 years of hands-on experience designing, developing, and
+                    implementing applications and solutions using a range of technologies and programming languages.
+                    Seeking to leverage broad development experience and hands-on technical expertise in a challenging
+                    role as a Full-stack Developer.</p>
+                <div class="tech">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3"></i>
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-node"></i>
+                    <i class="fab fa-vuejs"></i>
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-bootstrap"></i>
+                    <i class="fab fa-sass"></i>
+                    <i class="fab fa-git-alt"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linux"></i>
+                </div>
+                <div class="list">
+                    <a href="#resume"><button class="btn"><i class="fa-solid fa-memo"></i>
+                        Resume</button></a>
+                    <a href="mailto:brown11369@gmail.com"><button class="btn"><i class="fa-solid fa-envelope"></i>
+                            Brown11369@gmail.com</button></a>
+                    <a href="tel:+919870895374"><button class="btn"><i class="fa-solid fa-phone"></i>
+                            9870895374</button></a>
                 </div>
             </div>
-            <span class="detl">Developer</span>
-            <p class="about">Full Stack Developer with 6+ years of hands-on experience designing, developing, and implementing applications and solutions using a range of technologies and programming languages. Seeking to leverage broad development experience and hands-on technical expertise in a challenging role as a Full-stack Developer.</p>
-            <div class="tech">
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-node"></i>
-                <i class="fab fa-vuejs"></i>
-                <i class="fab fa-react"></i>
-                <i class="fab fa-bootstrap"></i>
-                <i class="fab fa-sass"></i>
-                <i class="fab fa-git-alt"></i>
-                <i class="fab fa-github"></i>
-                <i class="fab fa-linux"></i>
+            <div id="about" class="slide">
+                <h2 class="detl">About Me</h2>
+                <div class="about-box">
+                    <div class="about-text">
+                        <p class="about">Since beginning my journey as a freelance developer nearly 10 years ago, I’ve
+                            done
+                            remote work for agencies, consulted for startups, and collaborated with talented people to
+                            create
+                            web products for both business and consumer use.
+                            I create successful responsive websites that are fast, easy to use, and built with best
+                            practices.
+                            The main area of my expertise is front-end development, HTML, CSS, JS, building small and
+                            medium web
+                            apps, custom plugins, features, animations, and coding interactive layouts.
+                            I also have full-stack developer experience with popular open-source CMS like (WordPress,
+                            Drupal,
+                            Magento, Keystone.js and others) .
+                        </p>
+                    </div>
+                    <div class="animat">
+                        <img src="./img/Circles-3.gif" class="about-img">
+                    </div>
+                </div>
             </div>
-            <div class="list">
-                <button class="btn">Email: <a href="mailto:brown11369@gmail.com"> Brown11369@gmail.com</a></button>
-                <button class="btn">Phone:<a href="tel:+919870895374"> 9870895374</button>
+            <div id="sklill" class="slide">
+                <h2 class="detl">Skills and</br>Experience</h2>
+                <div class="about-box">
+                    <div class="about-text">
+                        <p class="about">Since beginning my journey as a freelance developer nearly 10 years ago, I’ve
+                            done
+                            remote work for agencies, consulted for startups, and collaborated with talented people to
+                            create
+                            web products for both business and consumer use.
+                            I create successful responsive websites that are fast, easy to use, and built with best
+                            practices.
+                            The main area of my expertise is front-end development, HTML, CSS, JS, building small and
+                            medium web
+                            apps, custom plugins, features, animations, and coding interactive layouts.
+                            I also have full-stack developer experience with popular open-source CMS like (WordPress,
+                            Drupal,
+                            Magento, Keystone.js and others) .
+                        </p>
+                    </div>
+                    <div class="animat bar-box">
+                        <h3 class="bar-text">HTML</h3>
+                        <div class="bar-border">
+                            <div class="bar html-bar"></div>
+                        </div>
+                        <h3 class="bar-text">CSS</h3>
+                        <div class="bar-border">
+                            <div class="bar css-bar"></div>
+                        </div>
+                        <h3 class="bar-text">Javascript</h3>
+                        <div class="bar-border">
+                            <div class="bar js-bar"></div>
+                        </div>
+                        <h3 class="bar-text">Bootstrap</h3>
+                        <div class="bar-border">
+                            <div class="bar strp-bar"></div>
+                        </div>
+                        <h3 class="bar-text">Tailwind CSS</h3>
+                        <div class="bar-border">
+                            <div class="bar tail-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="work" class="slide">
+                <h2 class="detl">My Work</h2>
+                <div class="card-box">
+                    <div class="card">
+                        <img src="./img/pro2.png" class="proj-img">
+                    </div>
+                    <div class="card">
+                        <img src="./img/pro3.png" class="proj-img">
+                    </div>
+                    <div class="card">
+                        <img src="./img/pro4.png" class="proj-img">
+                    </div>
+                    <div class="card">
+                        <img src="./img/pro4.png" class="proj-img">
+                    </div>
+                    <div class="card">
+                        <img src="./img/pro2.png" class="proj-img">
+                    </div>
+                    <div class="card">
+                        <img src="./img/pro3.png" class="proj-img">
+                    </div>
+                    <div class="card">
+                        <img src="./img/pro2.png" class="proj-img">
+                    </div>
+                    <div class="card">
+                        <img src="./img/pro3.png" class="proj-img">
+                    </div>
+                    <div class="card">
+                        <img src="./img/pro4.png" class="proj-img">
+                    </div>
+                </div>
+            </div>
+            <div id="contact" class="slide">
+                <h1>contact</h1>
             </div>
         </section>
-        
-
     </div>
-    
 </body>
-<script src="https://kit.fontawesome.com/2991701c4d.js" crossorigin="anonymous"></script>
+
 </html>
