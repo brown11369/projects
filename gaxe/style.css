@@ -77,12 +77,11 @@ tbody tr:nth-child(even){
 }
 .close{
     position: absolute;
-    top: -15px;
+    top: -5px;
     right: -15px;
 }
-.close .fa-eye{
-    font-size: 15px;
-    color: red;
+.close .fa-circle-xmark{
+    font-size: 20px;
 }
 .box{
     display: flex;
