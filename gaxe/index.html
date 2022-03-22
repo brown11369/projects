@@ -5,32 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>G-axe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
 </head>
 <body>
-
-    <section>
-        <div class="data">
-            <div class="header"><h1>G-Axe</h1></div>
-            <div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Release Date</th>
-                            <th>Year</th>
-                            <th>Geners</th>
-                            <th>Duration</th>
-                            <th>IMDB Rating</th>
-                        </tr>
-                    </thead>
-                    <tbody id="data">
-
-                    </tbody>
-                </table>
+    <section id="modal" class="modal">
+        <div class="open-modal">
+            <div class="close">
+                <i onclick="close_nodal()" class="fa-solid fa-eye"></i>
             </div>
+            <h3 id="title">Dhoom 3</h3>
+            <div class="box">
+                <div class="img-conatiner">
+                    <img src="./desert.jpg" id="modal_img" class="modal-img" width="200px">
+                    <p id="genres">Sci-fi, Thriller</p>
+                </div>
+                <div class="text-container">
+                    <div>
+                        <h4>storyline</h4>
+                        <p id="storyline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsa odio itaque ipsum exercitationem corrupti iusto. Ullam nulla pariatur expedita! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus natus minus accusantium possimus excepturi, eos dignissimos. Itaque deleniti voluptas quo?</p>
+                    </div>
+                    <div>
+                        <h4>Playtime</h4>
+                        <p id="duration">170 min</p>
+                    </div>
+                    <div class="rating">
+                        <div>
+                            <h4>Imdb Rating</h4>
+                            <p id="imdb">5.7</p>
+                        </div>
+                        <div>
+                            <h4>Average Rating</h4>
+                            <p>7.1</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Relase Date</h4>
+                        <p id="rldate">12-dec-2016</p>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </section>
+
+
+
+    <div class="menu">
+        <h3>All Movies</h3>
+        <button class="btn">Add Movie</button>
+    </div>
+    <div class="tabledata">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Release Date</th>
+                    <th>Genres</th>
+                    <th>Duration</th>
+                    <th>IMDB Rating</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="movies">
+
+            </tbody>
+        </table>
+    </div>
+    
+
+
 
 
 
