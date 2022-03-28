@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
+
 <body>
     <section id="modal" class="modal">
         <div class="open-modal">
             <div class="close">
-                <i onclick="close_nodal()" class="fa-solid fa-circle-xmark"></i>
+                <i onclick="close_modal('modal')" class="fa-solid fa-circle-xmark"></i>
             </div>
             <h3 id="title">Dhoom 3</h3>
             <div class="box">
@@ -23,7 +27,10 @@
                 <div class="text-container">
                     <div>
                         <h4>storyline</h4>
-                        <p id="storyline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsa odio itaque ipsum exercitationem corrupti iusto. Ullam nulla pariatur expedita! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus natus minus accusantium possimus excepturi, eos dignissimos. Itaque deleniti voluptas quo?</p>
+                        <p id="storyline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsa odio
+                            itaque ipsum exercitationem corrupti iusto. Ullam nulla pariatur expedita! Lorem ipsum
+                            dolor, sit amet consectetur adipisicing elit. Temporibus natus minus accusantium possimus
+                            excepturi, eos dignissimos. Itaque deleniti voluptas quo?</p>
                     </div>
                     <div>
                         <h4>Playtime</h4>
@@ -51,10 +58,37 @@
     </section>
 
 
+    <!-- add movie section -->
+
+    <section id="adm-modal" class="adm-modal">
+        <div class="add-modal">
+            <div class="close">
+                <i onclick="close_modal('adm-modal')" class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <h3>Add Movie</h3>
+            <form id="addFrm" class="frm">
+                <input type="text" class="inp" placeholder="Movie Title" id="addTitle">
+                <input type="number" class="inp" placeholder="Movie Duration" id="addDuration">
+                <input type="text" class="inp" onfocus="cdate()" placeholder="Relase Date" id="addDate">
+                <input type="text" class="inp" placeholder="Movie Actors" id="addActor">
+                <input type="text" class="inp" placeholder="Movie Genres" id="addGenre">
+                <input type="text" class="inp" placeholder="IMDB Rating" id="addImdb">
+                <input type="text" class="inp" placeholder="Movie Poster URL" id="addUrl">
+                <textarea name="" placeholder="Movie Storyline" id="storyLine" cols="30" rows="10"></textarea>
+                <button type="button" onclick="addmovie()">Add</button>
+            </form>
+
+
+        </div>
+
+    </section>
+
+
+
 
     <div class="menu">
         <h3>All Movies</h3>
-        <button class="btn">Add Movie</button>
+        <button class="btn" onclick="openadmodal()">Add Movie</button>
     </div>
     <div class="tabledata">
         <table>
@@ -74,7 +108,7 @@
             </tbody>
         </table>
     </div>
-    
+
 
 
 
@@ -82,4 +116,5 @@
 
     <script src="./script.js"></script>
 </body>
+
 </html>

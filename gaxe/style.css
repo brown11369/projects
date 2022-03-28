@@ -58,7 +58,7 @@ tbody tr:nth-child(even){
     color: red;
 }
 
-.modal{
+.modal,.adm-modal{
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.7);
@@ -68,13 +68,16 @@ tbody tr:nth-child(even){
     align-items: center;
     display: none;
 }
-.open-modal{
+.open-modal,.add-modal{
     height: 60vh;
     width: 60%;
     background-color: #fff;
     padding: 10px 15px;
     position: relative;
 }
+/* .adm-modal{
+    display: flex;
+} */
 .close{
     position: absolute;
     top: -5px;
@@ -97,6 +100,9 @@ tbody tr:nth-child(even){
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+}
+#genres{
+    text-align: center;
 }
 .rating{
     display: flex;
