@@ -84,6 +84,32 @@
     </section>
 
 
+    <!-- update movie -->
+
+    <section id="updateModal" class="updateModal">
+        <div class="update-modal">
+            <div class="close">
+                <i onclick="close_modal('updateModal')" class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <h3>update Movie</h3>
+            <form id="addFrm" class="frm">
+                <input type="text" class="inp" placeholder="Movie Title" id="updateTitle">
+                <input type="number" class="inp" placeholder="Movie Duration" id="updateDuration">
+                <input type="text" class="inp" onfocus="cdate()" placeholder="Relase Date" id="updateDate">
+                <input type="text" class="inp" placeholder="Movie Actors" id="updateActor">
+                <input type="text" class="inp" placeholder="Movie Genres" id="updateGenre">
+                <input type="text" class="inp" placeholder="IMDB Rating" id="updateImdb">
+                <input type="text" class="inp" placeholder="Movie Poster URL" id="updateUrl">
+                <textarea name="" placeholder="Movie Storyline" id="updatestoryLine" cols="30" rows="10"></textarea>
+                <button type="button" onclick="updtmovie()">Update Movie</button>
+            </form>
+
+
+        </div>
+
+    </section>
+
+
 
 
     <div class="menu">
