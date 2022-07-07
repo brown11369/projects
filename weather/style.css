@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./img/5-Best-Free-and-Paid-Weather-APIs-2019-e1587582023501.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+header{
+    width: 100%;
+}
+
+.container {
+    width: 350px;
+    background-color: #adadad;
+    padding: 25px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.container>* {
+    margin-bottom: 20px;
+}
+
+.search_input {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 1.2rem;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 10px;
+    text-align: center;
+
+}
+
+.search_input:focus {
+    background-color: rgb(255, 255, 255);
+    ;
+}
+
+.search_details {
+    color: #000;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.search_location_details {
+    font-weight: bold;
+}
+
+.location_status {
+    padding: 20px;
+}
+
+.temp {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.min-max, .weather {
+    font-weight: 600;
+    font-size: 15px;
+}
