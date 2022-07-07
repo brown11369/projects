@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    background-color: rosybrown;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+
+}
+.service h2, .service p{
+    color: black;
+    margin: 10px auto;
+    text-align: center;
+
+}
+.service{
+    height: 100px;
+    background-color: blanchedalmond;
+    width: 18%;
+    padding: 1%;
+    float: left;
+    margin: 0 1.6%;
+}
+.content{
+    background-color: honeydew;
+    padding: 15px;
+    clear: both;
+
+    position: relative;
+    top: 5px;
+}
+.content p{
+    column-count: 3;
+    -webkit-column-count: 3;
+    column-gap: 20px;
+    column-rule: 1px solid red;
+}
+#banner{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#banner h1{
+    border: 2px solid black;
+    font-size: 45px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+}
+nav{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    /* border: 2px solid tomato; */
+    text-align: end;
+}
+nav a{
+    text-decoration: none;
+    text-align: end;
+    padding: 12px;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;    
+}
+
+
+
+
+
+nav .logo{
+    height: 50px;
+    float: left;
+}
+.call{
+    height: 75px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+
+

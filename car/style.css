@@ -1,0 +1,60 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+.sky, .grass, .road{
+    position: relative;
+}
+.sky{
+    background-color: skyblue;
+    height: 55%;
+}
+.grass{
+    background-color: greenyellow;
+    height: 15%;
+}
+.road{
+    background-color: dimgray;
+    height: 30%;
+}
+.divider{
+    width: 100%;
+    height: 0px;
+    border: 5px dashed #ffffff;
+    top: 50%;
+    position: absolute;
+
+}
+.car{
+    height: 70%;
+    position: absolute;
+    top: -50px;
+
+    /* ======animation name===== */
+    animation-name: drive;
+    animation-duration: 3s;
+    animation-fill-mode: none;
+    animation-delay: 2s;
+    /* animation-iteration-count: infinite; */
+    /* animation direction */
+}
+.audiw{
+    height: 70%;
+    position: absolute;
+    top: 30px;
+/* ======animation===== */
+    animation-name: drive2;
+    animation-duration: 3s;
+
+    animation-direction: alternate-reverse;
+}
+@keyframes drive{
+    from{transform: translateX(0);}
+    to{transform: translateX(1500px);}
+}
+@keyframes drive2{
+    from{transform: translateX(0);}
+    to{transform: translateX(1500px);}
+}
